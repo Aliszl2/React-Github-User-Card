@@ -6,14 +6,12 @@ export default function GithubUserData() {
   const [users, fetchUsers] = useState([]);
 
   useEffect(() => {
-    console.log("GithubUserData component mounted");
-
+  
     axios
       .get("https://api.github.com/users/Aliszl/followers")
 
       .then(response => {
-        console.log(response);
-        console.log(response.data);
+       
 
         fetchUsers(response.data);
       })
