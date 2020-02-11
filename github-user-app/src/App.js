@@ -1,19 +1,19 @@
 import React from "react";
 import GithubUserData from "./components/GithubUserData";
 import AliszlUserData from "./components/AliszlUserData";
-
-
+import img1 from "./assets/githublogo.png"
+import img2 from "./assets/lambdalogo.png"
 import "./App.css";
 
 function App() {
   return (
     <div className="container">
       <div className="header">
-        <img src="./assets/lambdalogo" alt="Lambda Logo" />
+        <img src={img2} alt="Lambda Logo" />
         <p>
-          <span role="img">❤️'s</span>
+          <span description="a" role="img">❤️'s</span>
         </p>
-        <img src="./assets/githublogo.png" alt="GitHub Logo" />
+        <img src={img1} alt="GitHub Logo" />
       </div>
       <div className="cards">
         <h1>My GitHubData:</h1>
